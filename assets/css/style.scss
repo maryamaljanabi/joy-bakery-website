@@ -1,0 +1,209 @@
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin products-img($img, $width, $height) {
+  background: url($img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: $width;
+  height: $height;
+  display: flex;
+  align-items: flex-end;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4em;
+}
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-custom {
+  background-color: rgba(36, 31, 25, 0.5);
+}
+
+.navbar-dark .navbar-nav {
+  .dropdown-menu {
+    background-color: rgba(36, 31, 25, 0.5);
+  }
+  .nav-link,
+  .dropdown-item {
+    padding: 1rem;
+    color: $beige;
+    transition: all 300ms ease;
+    &:hover {
+      background-color: $warmBrown;
+    }
+  }
+}
+
+nav {
+  .navbar-brand {
+    width: 300px;
+  }
+  img {
+    width: 100%;
+  }
+  .navbar-toggler {
+    margin-left: auto;
+    display: inline;
+  }
+}
+
+header {
+  background: url(/assets/images/bg-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: column;
+  h1 {
+    color: $beige;
+  }
+}
+
+#about {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.5) 100%,
+      #000000 100%
+    ),
+    url(/assets/images/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  p {
+    padding: 10rem;
+    font-size: 1.7rem;
+    color: white;
+  }
+}
+
+// #products {
+//   img {
+//     width: 100%;
+//   }
+//   .squares {
+//     img {
+//       width: 19rem;
+//       height: 19rem;
+//       object-fit: cover;
+//     }
+//   }
+//   .special {
+//     width: 38.5rem;
+//     height: 38.5rem;
+//     object-fit: cover;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   #products {
+//     img,
+//     .special,
+//     .squares img {
+//       width: 100%;
+//       padding: 1rem;
+//     }
+//   }
+// }
+
+#products {
+  .bread {
+    @include products-img("/assets/images/product-bread.jpg", 19rem, 19rem);
+  }
+  .pastery {
+    @include products-img("/assets/images/product-pie.jpg", 19rem, 19rem);
+  }
+  .cakes {
+    @include products-img("/assets/images/product-cake.jpg", 19rem, 19rem);
+  }
+  .desserts {
+    @include products-img("/assets/images/product-dessert.jpg", 19rem, 19rem);
+  }
+  .special {
+    @include products-img(
+      "/assets/images/product-special.jpg",
+      40.5rem,
+      40.5rem
+    );
+  }
+  h3 {
+    color: white;
+    font-size: 2.3rem;
+    margin: auto auto 1rem 1rem;
+    text-shadow: 4px 4px 5px black;
+  }
+}
+
+#love-us {
+  background-color: $beige;
+  padding: 2rem;
+  i {
+    color: $brown;
+    font-size: 3rem;
+  }
+  [class*="col-"] {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $brown;
+    margin: 1rem auto;
+    padding: 2rem;
+    max-width: 20rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-size: 2rem;
+  }
+}
+
+footer {
+  padding-top: 2rem;
+  background-color: $greyishBrown;
+  color: $beige;
+  h4 {
+    font-weight: 700;
+  }
+  i {
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: $beige !important;
+  }
+  #copyright {
+    padding: 1.2rem;
+    text-align: center;
+    background-color: $lightBlack;
+  }
+}
+
+@media (min-width: 768px) {
+  #products {
+    .bread,
+    .pastery,
+    .cakes,
+    .special,
+    .desserts {
+      width: 100%;
+      margin: 1rem auto;
+    }
+  }
+}

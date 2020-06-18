@@ -1,0 +1,251 @@
+/* Color Theme Swatches in Hex */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4em;
+}
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-custom {
+  background-color: rgba(36, 31, 25, 0.5);
+}
+
+.navbar-dark .navbar-nav .dropdown-menu {
+  background-color: rgba(36, 31, 25, 0.5);
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .dropdown-item {
+  padding: 1rem;
+  color: #f0e8dd;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .dropdown-item:hover {
+  background-color: #a86a47;
+}
+
+nav .navbar-brand {
+  width: 300px;
+}
+
+nav img {
+  width: 100%;
+}
+
+nav .navbar-toggler {
+  margin-left: auto;
+  display: inline;
+}
+
+header {
+  background: url(/assets/images/bg-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header h1 {
+  color: #f0e8dd;
+}
+
+#about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.5)), to(#000000)), url(/assets/images/about.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%, #000000 100%), url(/assets/images/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#about p {
+  padding: 10rem;
+  font-size: 1.7rem;
+  color: white;
+}
+
+#products .bread {
+  background: url("/assets/images/product-bread.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 19rem;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#products .pastery {
+  background: url("/assets/images/product-pie.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 19rem;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#products .cakes {
+  background: url("/assets/images/product-cake.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 19rem;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#products .desserts {
+  background: url("/assets/images/product-dessert.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 19rem;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#products .special {
+  background: url("/assets/images/product-special.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 40.5rem;
+  height: 40.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#products h3 {
+  color: white;
+  font-size: 2.3rem;
+  margin: auto auto 1rem 1rem;
+  text-shadow: 4px 4px 5px black;
+}
+
+#love-us {
+  background-color: #f0e8dd;
+  padding: 2rem;
+}
+
+#love-us i {
+  color: #724732;
+  font-size: 3rem;
+}
+
+#love-us [class*="col-"] {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #724732;
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 20rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  font-size: 2rem;
+}
+
+footer {
+  padding-top: 2rem;
+  background-color: #473e32;
+  color: #f0e8dd;
+}
+
+footer h4 {
+  font-weight: 700;
+}
+
+footer i {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: #f0e8dd !important;
+}
+
+footer #copyright {
+  padding: 1.2rem;
+  text-align: center;
+  background-color: #241f19;
+}
+
+@media (min-width: 768px) {
+  #products .bread,
+  #products .pastery,
+  #products .cakes,
+  #products .special,
+  #products .desserts {
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
