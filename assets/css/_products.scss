@@ -37,6 +37,10 @@
   p {
     margin: 1rem auto;
   }
+  img,
+  p {
+    cursor: pointer;
+  }
 }
 
 .modal {

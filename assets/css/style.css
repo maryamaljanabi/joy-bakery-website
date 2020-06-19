@@ -207,7 +207,7 @@
   max-width: 20rem;
   border-radius: 1.5rem;
   background-color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 footer {
@@ -341,6 +341,11 @@ footer #copyright {
 
 .product-container p {
   margin: 1rem auto;
+}
+
+.product-container img,
+.product-container p {
+  cursor: pointer;
 }
 
 .modal img {
