@@ -1,0 +1,28 @@
+@mixin products-img($img, $width, $height) {
+  background: url($img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: $width;
+  height: $height;
+  display: flex;
+  align-items: flex-end;
+}
+
+@mixin header-img($img, $opacity, $height) {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, $opacity) 100%,
+      #000000 100%
+    ),
+    url($img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: $height;
+  display: flex;
+  flex-direction: column;
+}

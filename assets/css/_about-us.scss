@@ -1,0 +1,11 @@
+#about-us {
+  @include header-img("/assets/images/about-us.jpg", 0.5, 70vh);
+  h1 {
+    color: white;
+  }
+}
+
+.content {
+  margin: 4rem auto;
+  padding: 3rem 7rem;
+}
