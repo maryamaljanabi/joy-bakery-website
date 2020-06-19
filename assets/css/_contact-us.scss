@@ -1,0 +1,6 @@
+#contact-us {
+  @include header-img("/assets/images/contact-us.jpg", 0.2, 70vh);
+  h1 {
+    color: white;
+  }
+}
