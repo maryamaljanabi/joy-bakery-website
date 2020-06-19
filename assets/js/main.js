@@ -19,4 +19,11 @@ $(document).ready(function () {
       $("#pastryModal".concat((index + 1).toString())).modal("show");
     });
   });
+
+  const dessertList = $(".product-container.dessert > div > div");
+  dessertList.each((index, item) => {
+    $(item).click(function () {
+      $("#dessertModal".concat((index + 1).toString())).modal("show");
+    });
+  });
 });
