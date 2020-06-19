@@ -12,4 +12,11 @@ $(document).ready(function () {
       $("#cakeModal".concat((index + 1).toString())).modal("show");
     });
   });
+
+  const pastryList = $(".product-container.pastry > div > div");
+  pastryList.each((index, item) => {
+    $(item).click(function () {
+      $("#pastryModal".concat((index + 1).toString())).modal("show");
+    });
+  });
 });
