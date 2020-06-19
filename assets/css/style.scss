@@ -41,6 +41,14 @@ body {
   }
 }
 
+// dropdown menu expand on hover
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
 nav {
   .navbar-brand {
     width: 300px;
@@ -49,7 +57,13 @@ nav {
     width: 100%;
   }
   .navbar-toggler {
-    margin-left: auto;
+    margin: 0.5rem 1rem 0.5rem auto;
     display: inline;
+  }
+}
+
+@media (max-width: 575.98px) {
+  nav .navbar-toggler {
+    margin: 0.5rem auto;
   }
 }
