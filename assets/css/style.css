@@ -109,7 +109,7 @@
           align-items: flex-end;
 }
 
-#products .pastery {
+#products .pastries {
   background: url("/assets/images/product-pie.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -230,7 +230,7 @@ footer #copyright {
 
 @media (min-width: 768px) {
   #products .bread,
-  #products .pastery,
+  #products .pastries,
   #products .cakes,
   #products .special,
   #products .desserts {
@@ -299,6 +299,27 @@ footer #copyright {
 }
 
 #dessert-header h1 {
+  color: white;
+}
+
+#pastries-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.5)), to(#000000)), url("/assets/images/product-pie.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%, #000000 100%), url("/assets/images/product-pie.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pastries-header h1 {
   color: white;
 }
 

@@ -33,7 +33,7 @@
   .bread {
     @include products-img("/assets/images/product-bread.jpg", 19rem, 19rem);
   }
-  .pastery {
+  .pastries {
     @include products-img("/assets/images/product-pie.jpg", 19rem, 19rem);
   }
   .cakes {
@@ -99,7 +99,7 @@ footer {
 @media (min-width: 768px) {
   #products {
     .bread,
-    .pastery,
+    .pastries,
     .cakes,
     .special,
     .desserts {
