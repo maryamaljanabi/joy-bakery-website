@@ -260,6 +260,27 @@ footer #copyright {
   color: white;
 }
 
+#cake-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.5)), to(#000000)), url("/assets/images/product-cake.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%, #000000 100%), url("/assets/images/product-cake.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cake-header h1 {
+  color: white;
+}
+
 .product-container {
   margin: 3rem auto;
   padding: 3rem;
