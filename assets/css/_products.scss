@@ -12,6 +12,13 @@
   }
 }
 
+#dessert-header {
+  @include header-img("/assets/images/product-dessert.jpg", 0.5, 70vh);
+  h1 {
+    color: white;
+  }
+}
+
 .product-container {
   margin: 3rem auto;
   padding: 3rem;
