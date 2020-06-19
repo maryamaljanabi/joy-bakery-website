@@ -93,6 +93,10 @@
   color: white;
 }
 
+#products a:hover {
+  text-decoration: none;
+}
+
 #products .bread {
   background: url("/assets/images/product-bread.jpg");
   background-position: center;

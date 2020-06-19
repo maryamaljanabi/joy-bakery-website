@@ -30,6 +30,9 @@
 }
 
 #products {
+  a:hover {
+    text-decoration: none;
+  }
   .bread {
     @include products-img("/assets/images/product-bread.jpg", 19rem, 19rem);
   }
