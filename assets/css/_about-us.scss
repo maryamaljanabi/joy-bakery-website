@@ -9,3 +9,12 @@
   margin: 4rem auto;
   padding: 3rem 7rem;
 }
+
+@media (max-width: 992px) {
+  #about-us h1 {
+    font-size: 3rem;
+  }
+  .content {
+    padding: 2rem 4rem;
+  }
+}

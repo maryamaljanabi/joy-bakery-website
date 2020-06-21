@@ -14,7 +14,6 @@
 body {
   background-color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 1em;
 }
 
 .navbar {
@@ -51,7 +50,7 @@ body {
 
 nav {
   .navbar-brand {
-    width: 300px;
+    width: 15rem;
   }
   img {
     width: 100%;
@@ -62,8 +61,12 @@ nav {
   }
 }
 
-@media (max-width: 575.98px) {
+// SMALL SCREENS
+@media (max-width: 576px) {
   nav .navbar-toggler {
     margin: 0.5rem auto;
+  }
+  nav .navbar-brand {
+    width: 10rem;
   }
 }
